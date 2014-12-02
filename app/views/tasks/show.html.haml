@@ -1,0 +1,12 @@
+%p#notice= notice
+= @task.name
+%br
+= @task.content
+%br
+= @task.task_from
+%br
+= @task.task_to
+%br
+= link_to 'Edit', edit_task_path(@task)
+|
+\#{link_to 'Back', tasks_path}
